@@ -24,7 +24,7 @@ After doing literal HOURS(!) of Google searches, I couldn't find anything that f
    * Pressing Start sets A to "fire" mode
 
 ## Instructions
- 1. Get the PCB printed (I used ![JLCPCB](https://jlcpcb.com/), because their online interface was very nice and their prices were totally reasonable)
+ 1. Get the PCB printed (I used [JLCPCB](https://jlcpcb.com/), because their online interface was very nice and their prices were totally reasonable)
  2. Order the components (see the bill of materials below)
  3. Solder everything together (I go shortest to tallest: resistors, 556 IC, transistors, cable)
  4. Unscrew the back of the NES-004 controller
@@ -33,13 +33,13 @@ After doing literal HOURS(!) of Google searches, I couldn't find anything that f
  7. Enjoy!
 
 ### Bill of Materials (BOM)
- * 2 - ![10K Ohm, 1/4W resistors](https://www.mouser.com/ProductDetail/ohmite/ok1035e-r52/?qs=xrm8qtdNeVNEKDgGXbVwvg%3D%3D&countrycode=US&currencycode=USD)
- * 2 - ![220 Ohm, 1/4W resistors](https://www.mouser.com/ProductDetail/ohmite/ok2215e-r52/?qs=AkUtuiJmyfmB6duDjv7E8w%3D%3D&countrycode=US&currencycode=USD)
- * 2 - ![NPN transistors](https://www.mouser.com/ProductDetail/rectron/2n5551-t/?qs=oFjv9VeDysEhdg04%252bKG5qg%3D%3D&countrycode=US&currencycode=USD)
- * 1 - ![NE556 timer](https://www.mouser.com/ProductDetail/texas-instruments/ne556n/?qs=gb35HGp1gQKUkn%252b6zgU6RA%3D%3D&countrycode=US&currencycode=USD)
- * 1 - ![DE9 cable](https://console5.com/store/atari-sega-commodore-coleco-msx-6-1-8m-joystick-controller-project-repair-cable-cord.html)
+ * 2 - [10K Ohm, 1/4W resistors](https://www.mouser.com/ProductDetail/ohmite/ok1035e-r52/?qs=xrm8qtdNeVNEKDgGXbVwvg%3D%3D&countrycode=US&currencycode=USD)
+ * 2 - [220 Ohm, 1/4W resistors](https://www.mouser.com/ProductDetail/ohmite/ok2215e-r52/?qs=AkUtuiJmyfmB6duDjv7E8w%3D%3D&countrycode=US&currencycode=USD)
+ * 2 - [NPN transistors](https://www.mouser.com/ProductDetail/rectron/2n5551-t/?qs=oFjv9VeDysEhdg04%252bKG5qg%3D%3D&countrycode=US&currencycode=USD)
+ * 1 - [NE556 timer](https://www.mouser.com/ProductDetail/texas-instruments/ne556n/?qs=gb35HGp1gQKUkn%252b6zgU6RA%3D%3D&countrycode=US&currencycode=USD)
+ * 1 - [DE9 cable](https://console5.com/store/atari-sega-commodore-coleco-msx-6-1-8m-joystick-controller-project-repair-cable-cord.html)
 
 ## Caveats and Gotchas
- 1. After assembling, my start button didn't want to engage. I solved this by added a bit of ![conductive copper tape](https://smile.amazon.com/gp/product/B01MR5DSCM/) to the bottom of the button to increase conductivity; after that, everything worked perfectly.
+ 1. After assembling, my start button didn't want to engage. I solved this by added a bit of [conductive copper tape](https://smile.amazon.com/gp/product/B01MR5DSCM/) to the bottom of the button to increase conductivity; after that, everything worked perfectly.
  2. Be sure that the components are on the _opposite_ side of the board as the button contacts. This ensures there's plenty of room for the buttons.
  3. This is my first PCB design ever. If you're good at this board and think, "well, that was a dumb decision" -- you're probably right! Feel free to let me know what I could do to improve the board. I would love for future versions to be as good as they can be!
