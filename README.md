@@ -7,9 +7,9 @@
 The NES-C64 (a play on the NES-004 model number of the original controller) is a non-destructive drop-in replacement PCB to convert an original NES-004 controller to a Commodore 64 controller. Once the board is put together, you simply open the original NES controller, remove the PCB and cable, and then add the new board and cable. If you ever want to convert the controller back to NES use, it's as simple as reversing the process.
 
 ## But, Why?
-I may be sadistic, but I'm a big fan of the original NES controller. I grew up with one and it feels natural to me. So (much) later in life, when I got a Commodore 64 and tried to play platformer games using the C64 joystick, I found myself unimpressed and wishing I had a controller in my hand.
+I may be sadistic, but I'm a big fan of the original NES controller. I grew up with one and it feels natural to me. So (much) later in life, when I got a Commodore 64 and tried to play platformer games using the C64 joystick, I found myself struggling and wishing I had a controller in my hand.
 
-My first effort was to rewire an NES controller with a new cable but reuse the original PCB. While this works, it does require desoldering an existing cable and chip, and that feels more destructive than I wanted. Surely someone has a way to just drop in a new PCB so I don't have to hurt the old one?
+My first effort was to rewire an NES controller with a new cable but reuse the original PCB. While this works, it does require desoldering an existing cable and chip from a perfectly good PCB, and that feels more destructive than I wanted. Surely someone has a way to just drop in a new PCB so I don't have to hurt the old one?
 
 After doing literal HOURS(!) of Google searches, I couldn't find anything that fit the bill. So I downloaded KiCad, watched a bunch of tutorials, and here we are.
 
@@ -20,7 +20,7 @@ After doing literal HOURS(!) of Google searches, I couldn't find anything that f
  * All buttons are used!
    * Up/Down/Left/Right are as expected
    * B is fire
-   * Pressing Select sets A to "jump" (Up) mode
+   * Pressing Select sets A to "jump" (Up) mode (this is the default)
    * Pressing Start sets A to "fire" mode
 
 ## Instructions
@@ -42,4 +42,15 @@ After doing literal HOURS(!) of Google searches, I couldn't find anything that f
 ## Caveats and Gotchas
  1. After assembling, my start button didn't want to engage. I solved this by added a bit of [conductive copper tape](https://smile.amazon.com/gp/product/B01MR5DSCM/) to the bottom of the button to increase conductivity; after that, everything worked perfectly.
  2. Be sure that the components are on the _opposite_ side of the board as the button contacts. This ensures there's plenty of room for the buttons.
- 3. This is my first PCB design ever. If you're good at this board and think, "well, that was a dumb decision" -- you're probably right! Feel free to let me know what I could do to improve the board. I would love for future versions to be as good as they can be!
+ 3. This is my first PCB design ever. If you're good at this stuff and think, "well, that was a dumb decision" -- you're probably right! Feel free to let me know what I could do to improve the board. I would love for future revisions to be as good as they can be!
+
+## Questions You Might Have
+
+### Can I use any old Atari-style cable?
+Sure, as long as it has the right wires going to the right pins. The original C64 joysticks often only used 6 wires (up, down, left, right, fire, ground), but this design uses a 7th wire (5v) to power the timer chip. With no power, up/down/left/right/B should all still work, but the select/start/A buttons will do nothing.
+
+### Will this work on (insert old system that uses Atari controllers here)?
+Maybe! I don't have other old systems to test with. The only caveat is, as before, it needs to provide 5v DC on the proper pin to power the timer circuit.
+
+### This seems neat, but I lack the time/equipment/energy to build this myself. Can I just buy it?
+Let me know! I'm toying with the idea of setting up an online storefront of some sort to sell a few pre-built versions.
